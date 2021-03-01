@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> JSCalc </title>
+        <link href="./styles.css" rel="stylesheet"> </link>
+</head>
+
+<body>
+        <div id="container" class="noselect">
+                <div id="calc" data-tilt 
+                data-tilt-max="30" data-tilt-speed="200" data-tilt-scale="1.1"
+                data-tilt-glare data-tilt-max-glare="0.3">        
+                
+                <h1 id="title"> JS Calc </h1>
+                <input id="visor" type="text" value="">
+                
+                <div id="buttons">
+                        <div class="button" id="times" onclick="add('X')"> X </div>     
+                        <div class="button" id="minus" onclick="add('-')"> - </div>
+                        <div class="button" id="plus" onclick="add('+')"> + </div>
+                        <div class="button" id="divide" onclick="add('/')"> / </div>
+
+                        <div class="button" id="igual" onclick="calculate()"> = </div>
+                        <div class="button" id="dot" onclick="add('.')"> . </div>
+                        <div class="button" style="order:-1" id="clear" onclick="clearInput()"> C </div>
+
+                        <!-- Operators -->                        
+                        <div class="button" style="order: -3" id="percent" onclick="add('%')"> % </div>
+                        <div class="button" style="order: -2" id="sqrt" onclick="add('')"> √  </div>
+                        <div class="button" style="order: -5 " id="del" onclick="del()"> 🠔  </div>
+                        
+                </div>
+                </div>
+        </div>
+</body>
+<script src="./tilt.js"></script>
+<script src="./index.js"></script>
+
+<script>
+
+</script>>
+</html>
